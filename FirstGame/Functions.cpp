@@ -29,8 +29,8 @@ float calculate_intellect(person person)
 person set_default()
 {
 	person person;
-	person.health
-		return person;
+	person.health = 50;
+	return person;
 }
 
 void get_person_stats(person hero)
