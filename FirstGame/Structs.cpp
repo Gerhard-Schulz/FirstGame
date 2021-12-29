@@ -1,6 +1,6 @@
 struct weapon
 {
-	char name[20];
+	char name[50];
 	float power;
 	float quality;
 };

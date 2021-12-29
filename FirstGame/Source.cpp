@@ -6,7 +6,7 @@
 #include <string.h>
 #include <fcntl.h>
 #include <locale.h>
-#include<Windows.h>
+#include <Windows.h>
 #include "Functions.h"
 #include "Structs.cpp"
 
@@ -22,5 +22,4 @@ void main()
 		
 	}
 	while (flag);
-
 }

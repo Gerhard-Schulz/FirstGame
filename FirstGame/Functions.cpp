@@ -26,10 +26,36 @@ float calculate_intellect(person person)
 	return intellect;
 }
 
-person set_default()
+weapon set_default_weapon_stats()
+{
+	weapon weapon;
+	weapon.name;
+	weapon.power = 0;
+	weapon.quality = 0;
+	return weapon;
+}
+
+skill set_default_person_skills()
+{
+	skill skill;
+	skill.health = 1.0;
+	skill.power = 1.0;
+	skill.agility = 1.0;
+	skill.intellect = 1.0;
+	skill.weapon = 1.0;
+	return skill;
+}
+
+person set_default_person_stats()
 {
 	person person;
-	person.health = 50;
+	person.health = 50.0;
+	person.power = 20.0;
+	person.agility = 20.0;
+	person.intellect = 20.0;
+	person.luck = 1.0;
+	person.weapon = set_default_weapon_stats();
+	person.skill = set_default_person_skills();
 	return person;
 }
 
